@@ -206,7 +206,7 @@ img {
 
 /* :: 3.5.0 Preloader */
 .preloader {
-  background-color: #ffffff;
+  background-color: #222222;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -215,16 +215,21 @@ img {
   right: 0;
   z-index: 9999; }
   .preloader .circle-preloader {
-    -webkit-animation: spin 900ms infinite linear;
-    animation: spin 900ms infinite linear; }
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+    -webkit-animation: fadeinout 1000ms linear forwards;
+    animation: fadeinout 1000ms linear forwards;
+	animation-iteration-count: 10;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
 /* :: 3.6.0 Miscellaneous */
 .bg-img {
   background-position: center center;
