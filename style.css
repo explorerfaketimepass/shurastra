@@ -41,7 +41,7 @@
 @import url(css/owl.carousel.min.css);
 @import url(css/animate.css);
 @import url(css/magnific-popup.css);
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css");
+@import url(css/fontawesome.min.css);
 @import url(css/audioplayer.css);
 /* :: 3.0 Base CSS */
 * {
