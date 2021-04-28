@@ -874,11 +874,11 @@ img {
         margin-bottom: 30px; } }
     .single-upcoming-shows .shows-desc .shows-img {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 284px;
-      flex: 0 0 284px;
-      max-width: 284px;
-      width: 284px;
-      margin-right: 15px; }
+      -ms-flex: 0 0 300px;
+      flex: 0 0 300px;
+      max-width: 300px;
+      width: 300px;
+      margin: auto; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-upcoming-shows .shows-desc .shows-img {
           -webkit-box-flex: 0;
