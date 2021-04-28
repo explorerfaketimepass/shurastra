@@ -874,10 +874,10 @@ img {
         margin-bottom: 30px; } }
     .single-upcoming-shows .shows-desc .shows-img {
       -webkit-box-flex: 0;
-      -ms-flex: 0 0 84px;
-      flex: 0 0 84px;
-      max-width: 84px;
-      width: 84px;
+      -ms-flex: 0 0 284px;
+      flex: 0 0 284px;
+      max-width: 284px;
+      width: 284px;
       margin-right: 15px; }
       @media only screen and (min-width: 768px) and (max-width: 991px) {
         .single-upcoming-shows .shows-desc .shows-img {
