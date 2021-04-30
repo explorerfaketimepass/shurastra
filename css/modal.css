@@ -1,0 +1,54 @@
+.modal-container {
+    position: absolute; /* Fallback to absolute if browser doesn't support fixed */
+    position: fixed; 
+    z-index: 999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.75);
+    padding:0.5em;
+}
+
+.modal {
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 25em;
+    padding: 1em;
+}
+
+.modal-body {
+    font-size: 0.8em;
+    padding: 1em 0;
+}
+
+.modal-body p {
+    margin: 0.75em 0;
+    color: #555;
+}
+
+.modal-button {
+    width: 100%;
+    background: rgb(59 121 236);
+    color: #fff;
+    font-size: 1.25em;
+    border: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:0.5em;
+}
+
+.modal-close {
+    float: right;
+    cursor: pointer;
+    opacity: 0.4;
+    font-size: 1.5em;
+    line-height: 0.75em;
+}
