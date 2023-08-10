@@ -16,6 +16,7 @@ Allow: /img/webp/Shurastra-Sinhagad-Karandak-pune.webp
 Allow: /img/core-img/logo-big.webp
 Allow: /index.html
 Allow: /about-us.html
+Allow: /stay.html
 
 Crawl-delay: 10
 Sitemap: https://shurastra.com/sitemap.xml
