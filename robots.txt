@@ -1,7 +1,22 @@
 User-agent: *
 Disallow:
+Allow: /img/core-img/favicon2.ico
+Allow: /img/core-img/rose.webp
+Allow: /img/core-img/logo-wbig.webp
+Allow: /img/webp/shurastra-festival-performace-djing.webp
+Allow: /img/webp/Shurastra-performance-Holi-Festival-India.webp
+Allow: /img/webp/Shurastra-press-photo.webp
+Allow: /img/webp/shurastra-artist.webp
+Allow: /img/core-img/signature-white2.webp
+Allow: /img/core-img/artwork-440x440.webp
+Allow: /img/webp/shurastra-festival-performace-djing.webp
+Allow: /img/webp/Shurastra-nucleya-holi-festival.webp
+Allow: /img/webp/Shurastra-Sinhagad-Karandak-pune-stage.webp
+Allow: /img/webp/Shurastra-Sinhagad-Karandak-pune.webp
+Allow: /img/core-img/logo-big.webp
+Allow: /index.html
+Allow: /about-us.html
+
 Crawl-delay: 10
-
 Sitemap: https://shurastra.com/sitemap.xml
-
 Host: shurastra.com
