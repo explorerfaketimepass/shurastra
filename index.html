@@ -46,6 +46,33 @@
     <noscript><img height="1" width="1" style="display: none"
             src="https://www.facebook.com/tr?id=2693511727607684&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            //let lazyBackgrounds = [].slice.call(document.querySelectorAll(".bg-img"));
+            let lazyBackgrounds = [].slice.call(document.querySelectorAll(".bg-img:not(.no-lazy)"));
+
+            if ("IntersectionObserver" in window) {
+                let lazyBackgroundObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.style.backgroundImage = 'url(' + entry.target.getAttribute("data-bg") + ')';
+                            lazyBackgroundObserver.unobserve(entry.target);
+                        }
+                    });
+                });
+
+                lazyBackgrounds.forEach(function (lazyBackground) {
+                    lazyBackgroundObserver.observe(lazyBackground);
+                });
+            } else {
+                // Fallback for browsers that don't support IntersectionObserver
+                lazyBackgrounds.forEach(function (lazyBackground) {
+                    lazyBackground.style.backgroundImage = 'url(' + lazyBackground.getAttribute("data-bg") + ')';
+                });
+            }
+        });
+    </script>
+
 </head>
 
 <body>
@@ -134,7 +161,8 @@
             <!-- Single Hero Slide -->
             <div class="single-hero-slide d-flex align-items-center justify-content-center">
                 <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/webp/shurastra-festival-performace-djing.webp)"></div>
+                <div class="slide-img bg-img no-lazy" style="background-image: url(img/webp/shurastra-festival-performace-djing.webp)">
+                </div>
                 <!-- Slide Content -->
                 <div class="hero-slides-content text-center">
                     <p data-animation="fadeInUp" data-delay="100ms"> </p>
@@ -147,7 +175,8 @@
             <!-- Single Hero Slide -->
             <div class="single-hero-slide d-flex align-items-center justify-content-center">
                 <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/webp/Shurastra-performance-Holi-Festival-India.webp)">
+                <div class="slide-img bg-img no-lazy"
+                    style="background-image: url(img/webp/Shurastra-performance-Holi-Festival-India.webp)">
                 </div>
                 <!-- Slide Content -->
                 <div class="hero-slides-content text-center">
@@ -268,22 +297,16 @@
     <div class="musica-music-artists-area d-flex flex-wrap clearfix">
         <!-- Music Search -->
         <div class="music-search bg-img wow fadeInUp" data-wow-delay="300ms"
-            style="background-image: url(img/webp/shurastra-festival-performace-djing.webp)">
-            <!--bg-overlay2-->
+            data-bg="img/webp/shurastra-festival-performace-djing.webp">
             <!-- Content -->
-            <div class="music-search-content">
-
-            </div>
+            <div class="music-search-content"></div>
         </div>
-
+    
         <!-- Artists Search -->
         <div class="artists-search bg-img wow fadeInUp" data-wow-delay="600ms"
-            style="background-image: url(img/webp/Shurastra-nucleya-holi-festival.webp)">
-            <!--bg-overlay2-->
+            data-bg="img/webp/Shurastra-nucleya-holi-festival.webp">
             <!-- Content -->
-            <div class="music-search-content">
-
-            </div>
+            <div class="music-search-content"></div>
         </div>
     </div>
     <div class="musica-music-artists-area d-flex flex-wrap clearfix"><br /></div>
@@ -291,24 +314,19 @@
     <div class="musica-music-artists-area d-flex flex-wrap clearfix">
         <!-- Music Search -->
         <div class="music-search bg-img wow fadeInUp" data-wow-delay="300ms"
-            style="background-image: url(img/webp/Shurastra-Sinhagad-Karandak-pune-stage.webp)">
-            <!--bg-overlay2-->
+            data-bg="img/webp/Shurastra-Sinhagad-Karandak-pune-stage.webp">
             <!-- Content -->
-            <div class="music-search-content">
-
-            </div>
+            <div class="music-search-content"></div>
         </div>
-
+    
         <!-- Artists Search -->
         <div class="artists-search bg-img wow fadeInUp" data-wow-delay="600ms"
-            style="background-image: url(img/webp/Shurastra-Sinhagad-Karandak-pune.webp)">
-            <!--bg-overlay2-->
+            data-bg="img/webp/Shurastra-Sinhagad-Karandak-pune.webp">
             <!-- Content -->
-            <div class="music-search-content">
-
+            <div class="music-search-content"></div>
             </div>
-        </div>
-    </div>
+            </div>
+    
     <!-- ##### Music Artists Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
