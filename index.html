@@ -390,12 +390,25 @@
                     <div class="section-heading">
                         <div class="iframe-container">
                             <a href="https://siachenstudios.com/news/shurastra-song-issues-ft-lexi-scatena/" target="_blank">
-                            <img src="img/issues/issues-press-siachen.png" alt="Shurastra - Issues Press Article" loading="lazy" class="press-article-img" width="60%"/>
+                                <img class="themeImage" src="img/issues/issues-press-siachen.jpeg" alt="Shurastra - Issues Press Article" loading="lazy" class="press-article-img" width="60%"/>
                             </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <div class="iframe-container">
+                            <a href="https://theindianmusicdiaries.com/singles-roundup-76-electronic-folk-electro-pop-and-more/#issues-shurastra" target="_blank">
+                                <img class="themeImage" src="img/issues/issues-press-theindianmusicdiaries.jpeg" alt="Shurastra - Issues Press Article" loading="lazy" class="press-article-img" width="60%"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
         </div>
     </div>
     
@@ -531,6 +544,28 @@
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
+    <script>
+        function updateImagesForTheme() {
+            var images = document.querySelectorAll('.themeImage');
+            images.forEach(function(image) {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    // Change to dark theme image
+                    image.src = image.src.replace(/(\.[\w\d_-]+)$/i, '-dark$1');
+                } else {
+                    // Change to light theme image
+                    image.src = image.src.replace('-dark', '');
+                }
+            });
+        }
+    
+        // Update images when the page loads
+        updateImagesForTheme();
+    
+        // Optionally, listen for changes in theme
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateImagesForTheme);
+    </script>
+    
+
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
     <script src="js/bootstrap/popper.min.js"></script>
