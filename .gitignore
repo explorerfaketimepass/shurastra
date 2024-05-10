@@ -1,0 +1,8 @@
+# macOS system files
+.DS_Store
+
+# Dependency directories
+node_modules/
+
+# Local development server
+.env
