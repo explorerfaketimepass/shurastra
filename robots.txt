@@ -2,21 +2,41 @@ User-agent: *
 Allow: /img/core-img/favicon2.ico
 Allow: /img/core-img/rose.webp
 Allow: /img/core-img/logo-wbig.webp
+Allow: /img/core-img/signature-white2.webp
+Allow: /img/core-img/artwork-440x440.webp
+Allow: /img/core-img/logo-big.webp
+
+Allow: /img/webp/shurastra-artist-photo.webp
+Allow: /img/webp/shurastra-in-studio.webp
 Allow: /img/webp/shurastra-festival-performace-djing.webp
 Allow: /img/webp/Shurastra-performance-Holi-Festival-India.webp
 Allow: /img/webp/Shurastra-press-photo.webp
-Allow: /img/webp/shurastra-artist.webp
-Allow: /img/core-img/signature-white2.webp
-Allow: /img/core-img/artwork-440x440.webp
-Allow: /img/webp/shurastra-festival-performace-djing.webp
 Allow: /img/webp/Shurastra-nucleya-holi-festival.webp
 Allow: /img/webp/Shurastra-Sinhagad-Karandak-pune-stage.webp
 Allow: /img/webp/Shurastra-Sinhagad-Karandak-pune.webp
-Allow: /img/core-img/logo-big.webp
+
+Allow: /img/shurastra-photos/large_Shurastra_issues_press_photo_9cfd1e108f.jpg
+Allow: /img/shurastra-photos/large_Shurastra-LA.jpeg
+Allow: /img/shurastra-photos/large_Shurastra-LosAngeles.jpeg
+Allow: /img/shurastra-photos/large_Shurastra-Los-Angeles.jpeg
+
+Allow: /img/you-drive-me-crazy/you-drive-me-crazy-artwork.jpeg
+Allow: /img/you-drive-me-crazy/press-conversationsabouther.png
+Allow: /img/you-drive-me-crazy/press-perspectiveonlife.png
+
+Allow: /img/issues/small_Shurastra_issues_artwork.jpeg
+Allow: /img/issues/issues-press-siachen.jpeg
+Allow: /img/issues/issues-press-theindianmusicdiaries.jpeg
+
 Allow: /index.html
 Allow: /about-us.html
 Allow: /stay.html
+Allow: /issues.html
+
+Allow: /img/*
+
 Disallow:
+
 Crawl-delay: 10
 Sitemap: https://shurastra.com/sitemap.xml
 Host: shurastra.com
