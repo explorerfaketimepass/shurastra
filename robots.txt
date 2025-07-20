@@ -2,7 +2,7 @@ User-agent: *
 Allow: /img/core-img/favicon2.ico
 Allow: /img/core-img/rose.webp
 Allow: /img/core-img/Shurastra_logo_2025_bold.svg
-Allow: /img/core-img/signature-white2.webp
+Allow: /img/core-img/Shurastra_logo_2025_bold.svg
 Allow: /img/core-img/artwork-440x440.webp
 Allow: /img/core-img/logo-big.webp
 

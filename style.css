@@ -273,24 +273,38 @@ img {
   right: 0;
   z-index: 9999; }
   .preloader .circle-preloader {
-    -webkit-animation: spin 3s infinite cubic-bezier(0,0,0,1);
-    animation: spin 3s infinite cubic-bezier(0,0,0,1); }
+    -webkit-animation: flicker 5s infinite ease-in-out; ;
+    animation: flicker 5s infinite ease-in-out; }
 	
-	
+@keyframes flicker {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes spin {
-	
-  17% { transform: rotate(0deg); }
-  
-  33% { transform: rotate(60deg); }
-	
-  50% { transform: rotate(120deg); }
-	  
-  66% { transform: rotate(180deg); }
-  
-  83% { transform: rotate(240deg); }
-  
-  100% { transform: rotate(300deg); }
-}	
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
   
 @keyframes spin {
 	
